@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const {SHOW_WIDGETS: widgets = ['FAQ', 'HELP'], LOCATION: locations = {FAQ : 'faq', HELP: 'help'}} = window.__subscribili__ || {};
+const {SHOW_WIDGETS: widgets = ['ROOT'], LOCATION: locations = {FAQ : 'faq', HELP: 'help', ROOT: 'root'}} = window.__subscribili__ || {};
 
 console.log('widgets', widgets);
 console.log('locations', locations);
