@@ -1,7 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import FAQ from './FAQ';
+import Help from './Help';
 
-function App() {
+function App({widget}) {
+  // console.log('App', widget);
+  if (widget === 'FAQ') {
+    console.log('App', widget);
+    return <FAQ />;
+  }
+  if (widget === 'HELP') {
+    console.log('App', widget);
+    return <Help />;
+  }
   return (
     <div className="App">
       <header className="App-header">
